@@ -1,0 +1,32 @@
+{:eaf.ontology/version 1
+ :eaf.ontology/foundation
+ {:primitive :incidence
+  :individual "A basis-scoped observational quotient of an incidence closure."
+  :identifier "A binding to an individual; never the individual itself."
+  :authentication "A challenge-proof occurrence; never authorization."
+  :authorization "A constrained principal-capability-resource incidence."
+  :execution "A content-addressable occurrence binding identity and authority."}
+ :eaf.ontology/incidence
+ {:required [:incidence/id :incidence/kind :incidence/boundary]
+  :endpoint-required [:endpoint/incidence :endpoint/role
+                      :endpoint/sign :endpoint/multiplicity]
+  :signs [-1 0 1]}
+ :eaf.ontology/viewpoints
+ {:av "context, decisions, dictionary, provenance"
+  :iv "individual constitution, equivalence, persistence"
+  :tv "identifier, controller, authentication, delegation, revocation"
+  :cv "capabilities, resources, attenuation"
+  :ov "activities, interactions, resonance, responsibility"
+  :exv "plans, artifacts, policies, grants, executions, receipts"
+  :div "conceptual incidence, logical datoms, physical encodings"
+  :pv "basis changes, split, merge, supersession, migration"
+  :stdv "standards, profiles, conformance rules"}
+ :eaf.ontology/standards
+ [{:standard/id :w3c/did-core-1.0
+   :standard/scope :identifier-and-verification-relationships}
+  {:standard/id :chainagnostic/cacao
+   :standard/scope :capability-delegation-proof}
+  {:standard/id :com-junkawasaki/inc
+   :standard/scope :incidence-and-bisimulation-foundation}
+  {:standard/id :dodaf/v2.02
+   :standard/scope :data-centric-fit-for-purpose-views}]}
