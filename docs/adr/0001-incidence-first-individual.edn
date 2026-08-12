@@ -1,0 +1,31 @@
+[{:db/id -1
+  :adr/id "0001"
+  :adr/doc_type "adr"
+  :adr/topic "incidence-first-individual"
+  :adr/title "Individual is a basis-scoped incidence quotient; DID is a binding"
+  :adr/status :accepted
+  :adr/date "2026-08-12"
+  :adr/deciders ["Jun Kawasaki"]
+  :adr/related ["DoDAF 2.02" "W3C DID Core 1.0" "com-junkawasaki/inc"]
+  :adr/body
+  "## Decision
+
+EAF has one primitive architectural element: incidence. An individual is the
+observational quotient of a scoped incidence closure at an immutable basis.
+Raw IDs do not establish equality, and cross-basis continuity is not inferred.
+
+DID binding, authentication occurrence, session principal, authorization,
+and execution identity are distinct incidences. A valid authentication proof
+does not authorize an effect. Effectful execution requires an individual,
+authentication occurrence, and constrained authority incidence; pure
+computation may be anonymous.
+
+All viewpoints are deterministic projections from the same canonical graph.
+They do not own independent copies of architecture facts.
+
+## R0 representation choice
+
+The current Inc Lean core requires endpoint type consistency. R0 therefore
+uses one common carrier and expresses semantic kinds through
+`:incidence/kind`. A future heterogeneous dependent boundary must provide an
+erasure into this carrier and prove preservation before replacing it."}]

@@ -1,0 +1,9 @@
+(ns etzhayyim.architecture-framework.test-runner
+  (:require [clojure.test :as test]
+            [etzhayyim.architecture-framework.core-test]))
+
+(defn -main [& _]
+  (let [{:keys [fail error]}
+        (test/run-tests 'etzhayyim.architecture-framework.core-test)]
+    (when (pos? (+ fail error))
+      (System/exit 1))))

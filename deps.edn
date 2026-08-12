@@ -1,0 +1,4 @@
+{:paths ["src" "resources"]
+ :aliases
+ {:test {:extra-paths ["test"]
+         :main-opts ["-m" "etzhayyim.architecture-framework.test-runner"]}}}
