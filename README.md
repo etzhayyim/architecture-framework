@@ -65,7 +65,7 @@ Cross-basis identity is never inferred. Continuity requires an explicit
 ## Verify
 
 ```bash
-clojure -M:test
+kbb -M:test
 ```
 
 ## Sources
