@@ -1,5 +1,5 @@
 (ns etzhayyim.architecture-framework.core-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [etzhayyim.architecture-framework.core :as eaf]))
 
 (defn ep [target role]
