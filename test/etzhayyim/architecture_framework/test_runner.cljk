@@ -1,5 +1,5 @@
 (ns etzhayyim.architecture-framework.test-runner
-  (:require [clojure.test :as test]
+  (:require [kotoba.test :as test]
             [etzhayyim.architecture-framework.core-test]))
 
 (defn -main [& _]
